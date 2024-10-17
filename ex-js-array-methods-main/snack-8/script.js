@@ -22,11 +22,15 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-// Uso find per trovare la classe di uno studente specifico
+/* // Uso find per trovare la classe di uno studente specifico
 const student1Class = students.find((student) => {
   if (student.name = 'Marco Lanci'){
     return students.class
   }
   return none
 })
-console.log(student1Class);
+console.log(student1Class); */
+
+//Correzione
+const classNumber = students.find(student => student.name === "Marco Lanci").class
+console.log(classNumber);
